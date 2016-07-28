@@ -9,6 +9,7 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <iostream>
+#include <unistd>
 
 const static char* config_name = "../config/memcached.config";
 const static char* log_path = "../log";
