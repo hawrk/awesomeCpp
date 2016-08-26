@@ -18,7 +18,7 @@
 
 using namespace std;
 
-namespace hawrk
+namespace hal
 {
 
 	class CConfig

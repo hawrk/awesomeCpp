@@ -8,7 +8,8 @@
 #include <stdio.h>
 #include "config.hpp"
 
-using namespace hawrk;
+using namespace hal;
+using namespace google;
 
 bool CConfig::FileExist(const char* filename)
 {

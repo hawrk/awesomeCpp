@@ -9,12 +9,11 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <iostream>
-#include <unistd>
 
 const static char* config_name = "../config/memcached.config";
 const static char* log_path = "../log";
 
-using namespace hawrk;
+using namespace hal;
 using namespace google;
 using namespace std;
 
@@ -38,7 +37,7 @@ int main(int argc,char* argv[])
 	CConfig config;
 	if(!config.FileExist(config_name))
 	{
-		LOG(ERROR)<<"config file:["<<config_name<<"] not exist!!"<<endl;
+		LOG(ERROR)<<"config file:["<<config_name<<"] not exist"<<endl;
 		exit(0);
 	}
 

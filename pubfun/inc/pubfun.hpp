@@ -14,6 +14,7 @@
 #include <string.h>
 #include <string>
 #include "macro.hpp"
+#include <regex.h>
 /*
  * Desc:  从字符串中按"="符号做为分隔符拆分出键名及键值
  * input:
@@ -32,5 +33,8 @@ bool IsNeedSkip(const char *szLine);
 
 //map 格式 转换成string 格式
 bool Map2Str(const StrStrMap &inMap, std::string &outStr);
+
+//正则表达式匹配
+bool matchRegex(const char* pattern, const char* userString);
 
 #endif /* INCLUDE_PUBFUN_HPP_ */
