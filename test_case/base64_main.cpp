@@ -1,4 +1,5 @@
 //base64_main.cpp
+//hawrk 2017.05.09
 #include "base64.h"
 #include <iostream>
 
